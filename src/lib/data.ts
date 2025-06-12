@@ -1,5 +1,5 @@
 import { User, Code2, Briefcase, Wrench, Trophy, Mail } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export const sections = [
@@ -20,6 +20,11 @@ export const socialLinks = [
     icon: FaXTwitter,
     href: "https://x.com/biniyamnegasa",
     label: "Twitter",
+  },
+  {
+    icon: FaTelegram,
+    href: "https://t.me/biniyamnegasa",
+    label: "Telegram",
   },
   { icon: Mail, href: "mailto:your.email@example.com", label: "Email" },
 ];

@@ -145,7 +145,7 @@ export function PortfolioLayout() {
           </div>
 
           {/* Introduction */}
-          <section id="introduction" className="mb-16">
+          <section id="introduction" className="mb-10 pt-6">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 rounded-md bg-blue-600">
                 <User className="h-5 w-5 text-white" />
@@ -172,7 +172,7 @@ export function PortfolioLayout() {
           </section>
 
           {/* Projects */}
-          <section id="projects" className="mb-16">
+          <section id="projects" className="mb-10 pt-6">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 rounded-md bg-blue-600">
                 <Code2 className="h-5 w-5 text-white" />
@@ -195,7 +195,7 @@ export function PortfolioLayout() {
           </section>
 
           {/* Experience */}
-          <section id="experience" className="mb-16">
+          <section id="experience" className="mb-10 pt-6">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 rounded-md bg-blue-600">
                 <Briefcase className="h-5 w-5 text-white" />
@@ -239,7 +239,7 @@ export function PortfolioLayout() {
           </section>
 
           {/* Tools & Technologies */}
-          <section id="tools" className="mb-16">
+          <section id="tools" className="mb-10 pt-6">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 rounded-md bg-blue-600">
                 <Wrench className="h-5 w-5 text-white" />
@@ -278,7 +278,7 @@ export function PortfolioLayout() {
           </section>
 
           {/* Competitive Programming */}
-          <section id="extras" className="mb-16">
+          <section id="extras" className="mb-10 pt-6">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 rounded-md bg-blue-600">
                 <Trophy className="h-5 w-5 text-white" />

@@ -1,12 +1,5 @@
-import { ModeToggle } from "@/components/ModeToggle";
+import { PortfolioLayout } from "@/components/PortfolioLayout";
 
 export default function Home() {
-  return (
-    <main>
-      <div className="fixed bottom-4 right-4">
-        <ModeToggle />
-      </div>
-      <h1>Hello World</h1>
-    </main>
-  );
+  return <PortfolioLayout />;
 }

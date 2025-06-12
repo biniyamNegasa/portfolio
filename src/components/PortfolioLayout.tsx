@@ -22,6 +22,7 @@ import {
   tools,
   achievements,
 } from "@/lib/data";
+import Link from "next/link";
 
 export function PortfolioLayout() {
   const [activeSection, setActiveSection] = useState("introduction");
@@ -63,7 +64,7 @@ export function PortfolioLayout() {
         <ModeToggle />
       </div>
       {/* Left Sidebar - Social Icons (hidden on mobile) */}
-      <div className="fixed left-4 top-1/2 -translate-y-1/2 z-40 h-auto py-8 w-14 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm rounded-r-2xl hidden md:block">
+      <aside className="fixed left-4 top-1/2 -translate-y-1/2 z-40 h-auto py-8 w-14 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm rounded-r-2xl hidden md:block">
         <div className="flex h-full w-full flex-col items-center justify-center gap-6">
           {socialLinks.map((link) => (
             <Button
@@ -84,7 +85,7 @@ export function PortfolioLayout() {
             </Button>
           ))}
         </div>
-      </div>
+      </aside>
 
       {/* Mobile Navigation Button (only visible on mobile) */}
       <Button
@@ -103,15 +104,17 @@ export function PortfolioLayout() {
       />
 
       {/* Main Content */}
-      <div className="md:ml-24 lg:mr-80">
+      <main className="md:ml-24 lg:mr-80">
         <div className="mx-auto max-w-4xl px-6 py-8">
           {/* Header */}
           <div className="mb-10 text-center lg:text-left">
             <div className="mb-6 lg:flex lg:items-center lg:justify-between">
               <div>
-                <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-2">
-                  Your Name
-                </h1>
+                <Link href="/">
+                  <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-2">
+                    Your Name
+                  </h1>
+                </Link>
                 <p className="text-xl text-slate-600 dark:text-slate-300">
                   Software Engineer
                 </p>
@@ -179,10 +182,16 @@ export function PortfolioLayout() {
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {projects.map((project, index) => (
+              {projects.slice(0, 4).map((project, index) => (
                 <ProjectCard key={index} project={project} />
               ))}
             </div>
+            <Link
+              href="/projects"
+              className="block text-blue-600 dark:text-blue-400 hover:underline underline-offset-2 decoration-2 mt-6 text-right"
+            >
+              View all projects
+            </Link>
           </section>
 
           {/* Experience */}
@@ -309,12 +318,12 @@ export function PortfolioLayout() {
             </div>
           </section>
         </div>
-      </div>
+      </main>
 
       {/* Right Sidebar - Table of Contents (always visible on desktop) */}
-      <div className="hidden lg:block">
+      <aside className="hidden lg:block">
         <TableOfContents activeSection={activeSection} />
-      </div>
+      </aside>
     </div>
   );
 }

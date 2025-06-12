@@ -59,6 +59,40 @@ export const projects = [
     demo: "https://your-blog-demo.vercel.app",
     image: "",
   },
+  {
+    title: "E-commerce Platform",
+    description:
+      "Full-stack e-commerce solution with Next.js, TypeScript, and Stripe integration",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "PostgreSQL"],
+    github: "https://github.com/yourusername/ecommerce",
+    demo: "https://your-ecommerce-demo.vercel.app",
+    image: "",
+  },
+  {
+    title: "Task Management App",
+    description: "Collaborative task management tool with real-time updates",
+    tech: ["React", "Node.js", "Socket.io", "MongoDB"],
+    github: "https://github.com/yourusername/taskmanager",
+    demo: "https://your-taskmanager-demo.vercel.app",
+    image: "",
+  },
+  {
+    title: "Weather Dashboard",
+    description: "Beautiful weather dashboard with location-based forecasts",
+    tech: ["Vue.js", "TypeScript", "Chart.js", "OpenWeather API"],
+    github: "https://github.com/yourusername/weather",
+    demo: "https://your-weather-demo.vercel.app",
+    image: "",
+  },
+  {
+    title: "Personal Blog",
+    description:
+      "Static blog built with Next.js and MDX for technical articles",
+    tech: ["Next.js", "MDX", "Tailwind CSS", "Vercel"],
+    github: "https://github.com/yourusername/blog",
+    demo: "https://your-blog-demo.vercel.app",
+    image: "",
+  },
 ];
 
 export const experiences = [
@@ -75,13 +109,6 @@ export const experiences = [
     period: "2020 - 2022",
     description:
       "Built scalable web applications using Next.js and Node.js, collaborated with design team to implement pixel-perfect UIs.",
-  },
-  {
-    title: "Junior Developer",
-    company: "Digital Agency",
-    period: "2019 - 2020",
-    description:
-      "Developed responsive websites and web applications, gained experience in modern JavaScript frameworks.",
   },
 ];
 

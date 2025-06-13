@@ -1,6 +1,9 @@
 import { User, Code2, Briefcase, Wrench, Trophy, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { SiCodeforces, SiLeetcode } from "react-icons/si";
+import atcoder from "@/../public/atcoder.svg";
+import { Atcoder } from "@/components/Atcoder";
 
 export const sections = [
   { id: "introduction", label: "Introduction", icon: User },
@@ -132,18 +135,21 @@ export const tools = {
 
 export const achievements = [
   {
+    icon: SiLeetcode,
     platform: "LeetCode",
-    stats: "1,200+ problems solved • Top 5% globally",
-    badges: ["Algorithm Expert", "SQL Master", "Contest Participant"],
+    stats: "1713",
+    url: "https://leetcode.com/u/biniyamnegasa17/",
   },
   {
+    icon: SiCodeforces,
     platform: "Codeforces",
-    stats: "Expert (1600+ rating) • 150+ contests",
-    badges: ["Expert", "Problem Setter", "Contest Regular"],
+    stats: "1554",
+    url: "https://codeforces.com/profile/biniyamnegasa",
   },
   {
+    icon: Atcoder,
     platform: "AtCoder",
-    stats: "Blue (1200+ rating) • Regular participant",
-    badges: ["Algorithm Specialist", "Math Enthusiast"],
+    stats: "937",
+    url: "https://atcoder.jp/users/biniyam",
   },
 ];

@@ -1,17 +1,25 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Code2, Trophy, Briefcase, User, Wrench, Menu } from "lucide-react";
+import {
+  Code2,
+  Trophy,
+  Briefcase,
+  User,
+  Wrench,
+  Menu,
+  ExternalLink,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ModeToggle } from "@/components/ModeToggle";
 import { TableOfContents } from "@/components/TableOfContents";
 import { MobileNavigation } from "@/components/MobileNavigation";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -23,6 +31,9 @@ import {
   achievements,
 } from "@/lib/data";
 import Link from "next/link";
+import Image from "next/image";
+import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export function PortfolioLayout() {
   const [activeSection, setActiveSection] = useState("introduction");
@@ -60,9 +71,6 @@ export function PortfolioLayout() {
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900">
-      <div className="absolute top-8 right-4">
-        <ModeToggle />
-      </div>
       {/* Left Sidebar - Social Icons (hidden on mobile) */}
       <aside className="fixed left-4 top-1/2 -translate-y-1/2 z-40 h-auto py-8 w-14 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm rounded-r-2xl hidden md:block">
         <div className="flex h-full w-full flex-col items-center justify-center gap-6">
@@ -287,32 +295,38 @@ export function PortfolioLayout() {
                 Competitive Programming
               </h2>
             </div>
-            <div className="grid gap-6">
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {achievements.map((achievement, index) => (
                 <Card
                   key={index}
                   className="border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800"
                 >
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-xl text-slate-900 dark:text-white">
+                    <CardTitle className="text-xl text-slate-900 dark:text-white flex items-center gap-2">
                       {achievement.platform}
+                      {<achievement.icon className="h-5 w-5 inline-block" />}
                     </CardTitle>
                     <CardDescription className="text-base text-slate-600 dark:text-slate-300 mt-1">
-                      {achievement.stats}
+                      Max Rating: {achievement.stats}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-2">
-                      {achievement.badges.map((badge) => (
-                        <Badge
-                          key={badge}
-                          className="text-white border-0 bg-blue-600"
-                        >
-                          {badge}
-                        </Badge>
-                      ))}
-                    </div>
-                  </CardContent>
+                  <CardFooter className="pt-0">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      asChild
+                      className="hover:bg-slate-100 dark:hover:bg-slate-700"
+                    >
+                      <Link
+                        href={achievement.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Profile
+                      </Link>
+                    </Button>
+                  </CardFooter>
                 </Card>
               ))}
             </div>
@@ -324,6 +338,9 @@ export function PortfolioLayout() {
       <aside className="hidden lg:block">
         <TableOfContents activeSection={activeSection} />
       </aside>
+      <footer className="flex items-center justify-center h-12 w-full bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 shadow-sm">
+        <div>© 2025 Biniyam Negasa</div>
+      </footer>
     </div>
   );
 }

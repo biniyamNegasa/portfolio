@@ -2,7 +2,6 @@ import { User, Code2, Briefcase, Wrench, Trophy, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiCodeforces, SiLeetcode } from "react-icons/si";
-import atcoder from "@/../public/atcoder.svg";
 import { Atcoder } from "@/components/Atcoder";
 
 export const sections = [
@@ -29,7 +28,7 @@ export const socialLinks = [
     href: "https://t.me/biniyamnegasa",
     label: "Telegram",
   },
-  { icon: Mail, href: "mailto:your.email@example.com", label: "Email" },
+  { icon: Mail, href: "mailto:biniyamnegasa17@gmail.com", label: "Email" },
 ];
 
 export const projects = [
@@ -137,19 +136,19 @@ export const achievements = [
   {
     icon: SiLeetcode,
     platform: "LeetCode",
-    stats: "1713",
+    stats: process.env.NEXT_PUBLIC_LEETCODE_STATS || "1713",
     url: "https://leetcode.com/u/biniyamnegasa17/",
   },
   {
     icon: SiCodeforces,
     platform: "Codeforces",
-    stats: "1554",
+    stats: process.env.NEXT_PUBLIC_CODEFORCES_STATS || "1554",
     url: "https://codeforces.com/profile/biniyamnegasa",
   },
   {
     icon: Atcoder,
     platform: "AtCoder",
-    stats: "937",
+    stats: process.env.NEXT_PUBLIC_ATCODER_STATS || "937",
     url: "https://atcoder.jp/users/biniyam",
   },
 ];

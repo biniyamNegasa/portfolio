@@ -31,9 +31,6 @@ import {
   achievements,
 } from "@/lib/data";
 import Link from "next/link";
-import Image from "next/image";
-import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 
 export function PortfolioLayout() {
   const [activeSection, setActiveSection] = useState("introduction");
@@ -164,17 +161,17 @@ export function PortfolioLayout() {
             </div>
             <div className="pt-6 pb-6">
               <p className="text-lg leading-relaxed text-slate-700 dark:text-slate-300 mb-4">
-                Hello! I'm a passionate full-stack developer with over 4 years
-                of experience building modern web applications. I specialize in
-                React, Next.js, and TypeScript, with a strong background in both
-                frontend and backend development.
+                Hello! I&apos;m a passionate full-stack developer with over 4
+                years of experience building modern web applications. I
+                specialize in React, Next.js, and TypeScript, with a strong
+                background in both frontend and backend development.
               </p>
               <p className="text-lg leading-relaxed text-slate-700 dark:text-slate-300">
-                When I'm not coding, you'll find me solving algorithmic
-                challenges on competitive programming platforms or exploring new
-                technologies. I'm always eager to learn and take on new
-                challenges that push the boundaries of what's possible on the
-                web.
+                When I&apos;m not coding, you&apos;ll find me solving
+                algorithmic challenges on competitive programming platforms or
+                exploring new technologies. I&apos;m always eager to learn and
+                take on new challenges that push the boundaries of what&apos;s
+                possible on the web.
               </p>
             </div>
           </section>

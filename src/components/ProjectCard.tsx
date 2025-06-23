@@ -57,27 +57,31 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </CardContent>
       <CardFooter className="flex justify-end gap-3 pt-0">
-        <Button
-          variant="outline"
-          size="sm"
-          asChild
-          className="hover:bg-slate-100 dark:hover:bg-slate-700"
-        >
-          <a href={project.github} target="_blank" rel="noopener noreferrer">
-            <FaGithub className="h-4 w-4 mr-2" />
-            Code
-          </a>
-        </Button>
-        <Button
-          size="sm"
-          asChild
-          className="bg-blue-600 hover:bg-blue-700 text-white border-0"
-        >
-          <a href={project.demo} target="_blank" rel="noopener noreferrer">
-            <ExternalLink className="h-4 w-4 mr-2" />
-            Demo
-          </a>
-        </Button>
+        {project.github && (
+          <Button
+            variant="outline"
+            size="sm"
+            asChild
+            className="hover:bg-slate-100 dark:hover:bg-slate-700"
+          >
+            <a href={project.github} target="_blank" rel="noopener noreferrer">
+              <FaGithub className="h-4 w-4 mr-2" />
+              Code
+            </a>
+          </Button>
+        )}
+        {project.demo && (
+          <Button
+            size="sm"
+            asChild
+            className="bg-blue-600 hover:bg-blue-700 text-white border-0"
+          >
+            <a href={project.demo} target="_blank" rel="noopener noreferrer">
+              <ExternalLink className="h-4 w-4 mr-2" />
+              Demo
+            </a>
+          </Button>
+        )}
       </CardFooter>
     </Card>
   );

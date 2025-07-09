@@ -25,8 +25,8 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800 overflow-hidden flex flex-col h-full">
-      <div className="relative h-48 w-full">
+    <Card className="pt-0 border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800 overflow-hidden flex flex-col h-full">
+      <div className="relative h-52 w-full">
         <Image
           src={project.image || "/frieren.jpg"}
           alt={project.title}
@@ -86,3 +86,4 @@ export function ProjectCard({ project }: ProjectCardProps) {
     </Card>
   );
 }
+

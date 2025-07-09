@@ -1,70 +1,50 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import {
-  Code2,
-  Trophy,
-  Briefcase,
-  User,
-  Wrench,
-  Menu,
-  ExternalLink,
-} from "lucide-react";
+import { Code2, Trophy, User, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
-  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { TableOfContents } from "@/components/TableOfContents";
-import { MobileNavigation } from "@/components/MobileNavigation";
+// import { MobileNavigation } from "@/components/MobileNavigation";
 import { ProjectCard } from "@/components/ProjectCard";
-import {
-  socialLinks,
-  projects,
-  experiences,
-  tools,
-  achievements,
-} from "@/lib/data";
+import { socialLinks, projects, achievements } from "@/lib/data";
 import Link from "next/link";
 
 export function PortfolioLayout() {
-  const [activeSection, setActiveSection] = useState("introduction");
-  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  // const [activeSection, setActiveSection] = useState("introduction");
+  // const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = [
-        "introduction",
-        "projects",
-        "experience",
-        "tools",
-        "extras",
-      ];
-      const scrollPosition = window.scrollY + 100;
-
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-          if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + offsetHeight
-          ) {
-            setActiveSection(section);
-            break;
-          }
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const sections = [
+  //       "introduction",
+  //       "projects",
+  //       "experience",
+  //       "tools",
+  //       "extras",
+  //     ];
+  //     const scrollPosition = window.scrollY + 100;
+  //
+  //     for (const section of sections) {
+  //       const element = document.getElementById(section);
+  //       if (element) {
+  //         const { offsetTop, offsetHeight } = element;
+  //         if (
+  //           scrollPosition >= offsetTop &&
+  //           scrollPosition < offsetTop + offsetHeight
+  //         ) {
+  //           setActiveSection(section);
+  //           break;
+  //         }
+  //       }
+  //     }
+  //   };
+  //
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900">
@@ -93,20 +73,20 @@ export function PortfolioLayout() {
       </aside>
 
       {/* Mobile Navigation Button (only visible on mobile) */}
-      <Button
-        className="fixed bottom-6 right-6 z-50 h-12 w-12 rounded-full bg-blue-600 hover:bg-blue-700 shadow-md lg:hidden"
-        onClick={() => setIsMobileNavOpen(true)}
-      >
-        <Menu className="h-5 w-5 text-white" />
-      </Button>
+      {/* <Button */}
+      {/*   className="fixed bottom-6 right-6 z-50 h-12 w-12 rounded-full bg-blue-600 hover:bg-blue-700 shadow-md lg:hidden" */}
+      {/*   onClick={() => setIsMobileNavOpen(true)} */}
+      {/* > */}
+      {/*   <Menu className="h-5 w-5 text-white" /> */}
+      {/* </Button> */}
 
       {/* Mobile Navigation */}
-      <MobileNavigation
-        isOpen={isMobileNavOpen}
-        onCloseAction={() => setIsMobileNavOpen(false)}
-        activeSection={activeSection}
-        socialLinks={socialLinks}
-      />
+      {/* <MobileNavigation */}
+      {/*   isOpen={isMobileNavOpen} */}
+      {/*   onCloseAction={() => setIsMobileNavOpen(false)} */}
+      {/*   activeSection={activeSection} */}
+      {/*   socialLinks={socialLinks} */}
+      {/* /> */}
 
       {/* Main Content */}
       <main className="md:ml-24 lg:mr-80">
@@ -117,7 +97,7 @@ export function PortfolioLayout() {
               <div>
                 <Link href="/">
                   <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-2">
-                    Your Name
+                    Biniyam Negasa
                   </h1>
                 </Link>
                 <p className="text-xl text-slate-600 dark:text-slate-300">
@@ -200,87 +180,87 @@ export function PortfolioLayout() {
           </section>
 
           {/* Experience */}
-          <section id="experience" className="mb-10 pt-6">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 rounded-md bg-blue-600">
-                <Briefcase className="h-5 w-5 text-white" />
-              </div>
-              <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
-                Experience
-              </h2>
-            </div>
-            <div className="space-y-6">
-              {experiences.map((exp, index) => (
-                <Card
-                  key={index}
-                  className="border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800"
-                >
-                  <CardHeader className="pb-3">
-                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
-                      <div>
-                        <CardTitle className="text-xl text-slate-900 dark:text-white">
-                          {exp.title}
-                        </CardTitle>
-                        <CardDescription className="text-base font-medium text-slate-600 dark:text-slate-300 mt-1">
-                          {exp.company}
-                        </CardDescription>
-                      </div>
-                      <Badge
-                        variant="outline"
-                        className="self-start lg:self-center bg-slate-50 dark:bg-slate-700 text-slate-700 dark:text-slate-300"
-                      >
-                        {exp.period}
-                      </Badge>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-slate-600 dark:text-slate-300">
-                      {exp.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </section>
+          {/* <section id="experience" className="mb-10 pt-6"> */}
+          {/*   <div className="flex items-center gap-3 mb-6"> */}
+          {/*     <div className="p-2 rounded-md bg-blue-600"> */}
+          {/*       <Briefcase className="h-5 w-5 text-white" /> */}
+          {/*     </div> */}
+          {/*     <h2 className="text-3xl font-bold text-slate-900 dark:text-white"> */}
+          {/*       Experience */}
+          {/*     </h2> */}
+          {/*   </div> */}
+          {/*   <div className="space-y-6"> */}
+          {/*     {experiences.map((exp, index) => ( */}
+          {/*       <Card */}
+          {/*         key={index} */}
+          {/*         className="border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800" */}
+          {/*       > */}
+          {/*         <CardHeader className="pb-3"> */}
+          {/*           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4"> */}
+          {/*             <div> */}
+          {/*               <CardTitle className="text-xl text-slate-900 dark:text-white"> */}
+          {/*                 {exp.title} */}
+          {/*               </CardTitle> */}
+          {/*               <CardDescription className="text-base font-medium text-slate-600 dark:text-slate-300 mt-1"> */}
+          {/*                 {exp.company} */}
+          {/*               </CardDescription> */}
+          {/*             </div> */}
+          {/*             <Badge */}
+          {/*               variant="outline" */}
+          {/*               className="self-start lg:self-center bg-slate-50 dark:bg-slate-700 text-slate-700 dark:text-slate-300" */}
+          {/*             > */}
+          {/*               {exp.period} */}
+          {/*             </Badge> */}
+          {/*           </div> */}
+          {/*         </CardHeader> */}
+          {/*         <CardContent> */}
+          {/*           <p className="text-slate-600 dark:text-slate-300"> */}
+          {/*             {exp.description} */}
+          {/*           </p> */}
+          {/*         </CardContent> */}
+          {/*       </Card> */}
+          {/*     ))} */}
+          {/*   </div> */}
+          {/* </section> */}
 
           {/* Tools & Technologies */}
-          <section id="tools" className="mb-10 pt-6">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 rounded-md bg-blue-600">
-                <Wrench className="h-5 w-5 text-white" />
-              </div>
-              <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
-                Tools & Technologies
-              </h2>
-            </div>
-            <div className="grid gap-6">
-              {Object.entries(tools).map(([category, items]) => (
-                <Card
-                  key={category}
-                  className="border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800"
-                >
-                  <CardHeader>
-                    <CardTitle className="text-xl text-slate-900 dark:text-white">
-                      {category}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-2">
-                      {items.map((item) => (
-                        <Badge
-                          key={item}
-                          variant="secondary"
-                          className="bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300"
-                        >
-                          {item}
-                        </Badge>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </section>
+          {/* <section id="tools" className="mb-10 pt-6"> */}
+          {/*   <div className="flex items-center gap-3 mb-6"> */}
+          {/*     <div className="p-2 rounded-md bg-blue-600"> */}
+          {/*       <Wrench className="h-5 w-5 text-white" /> */}
+          {/*     </div> */}
+          {/*     <h2 className="text-3xl font-bold text-slate-900 dark:text-white"> */}
+          {/*       Tools & Technologies */}
+          {/*     </h2> */}
+          {/*   </div> */}
+          {/*   <div className="grid gap-6"> */}
+          {/*     {Object.entries(tools).map(([category, items]) => ( */}
+          {/*       <Card */}
+          {/*         key={category} */}
+          {/*         className="border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800" */}
+          {/*       > */}
+          {/*         <CardHeader> */}
+          {/*           <CardTitle className="text-xl text-slate-900 dark:text-white"> */}
+          {/*             {category} */}
+          {/*           </CardTitle> */}
+          {/*         </CardHeader> */}
+          {/*         <CardContent> */}
+          {/*           <div className="flex flex-wrap gap-2"> */}
+          {/*             {items.map((item) => ( */}
+          {/*               <Badge */}
+          {/*                 key={item} */}
+          {/*                 variant="secondary" */}
+          {/*                 className="bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300" */}
+          {/*               > */}
+          {/*                 {item} */}
+          {/*               </Badge> */}
+          {/*             ))} */}
+          {/*           </div> */}
+          {/*         </CardContent> */}
+          {/*       </Card> */}
+          {/*     ))} */}
+          {/*   </div> */}
+          {/* </section> */}
 
           {/* Competitive Programming */}
           <section id="extras" className="mb-10 pt-6">
@@ -332,9 +312,9 @@ export function PortfolioLayout() {
       </main>
 
       {/* Right Sidebar - Table of Contents (always visible on desktop) */}
-      <aside className="hidden lg:block">
-        <TableOfContents activeSection={activeSection} />
-      </aside>
+      {/* <aside className="hidden lg:block"> */}
+      {/*   <TableOfContents activeSection={activeSection} /> */}
+      {/* </aside> */}
       <footer className="flex items-center justify-center h-12 w-full bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 shadow-sm">
         <div>© 2025 Biniyam Negasa</div>
       </footer>

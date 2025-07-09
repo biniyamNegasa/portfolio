@@ -1,4 +1,4 @@
-import { User, Code2, Briefcase, Wrench, Trophy, Mail } from "lucide-react";
+import { User, Code2, Trophy, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiCodeforces, SiLeetcode } from "react-icons/si";
@@ -7,8 +7,8 @@ import { Atcoder } from "@/components/Atcoder";
 export const sections = [
   { id: "introduction", label: "Introduction", icon: User },
   { id: "projects", label: "Projects", icon: Code2 },
-  { id: "experience", label: "Experience", icon: Briefcase },
-  { id: "tools", label: "Tools & Technologies", icon: Wrench },
+  // { id: "experience", label: "Experience", icon: Briefcase },
+  // { id: "tools", label: "Tools & Technologies", icon: Wrench },
   { id: "extras", label: "Competitive Programming", icon: Trophy },
 ];
 export const socialLinks = [

@@ -8,7 +8,7 @@ export default function Projects() {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 flex flex-col items-center py-8 px-6">
       <Link href="/" className="hover:underline">
         <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-2">
-          Your Name
+          Biniyam Negasa
         </h1>
       </Link>
       <main>

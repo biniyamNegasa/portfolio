@@ -26,12 +26,12 @@ interface ProjectCardProps {
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card className="pt-0 border border-slate-200 dark:border-slate-700 shadow-sm bg-white dark:bg-slate-800 overflow-hidden flex flex-col h-full">
-      <div className="relative h-52 w-full">
+      <div className="relative h-72 w-full">
         <Image
           src={project.image || "/frieren.jpg"}
           alt={project.title}
           fill
-          className="object-cover"
+          className="object-cover object-left-top"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>

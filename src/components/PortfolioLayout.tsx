@@ -89,7 +89,7 @@ export function PortfolioLayout() {
       {/* /> */}
 
       {/* Main Content */}
-      <main className="md:ml-24 lg:mr-80">
+      <main className="md:mx-24">
         <div className="mx-auto max-w-4xl px-6 py-8">
           {/* Header */}
           <div className="mb-10 text-center lg:text-left">
@@ -141,17 +141,14 @@ export function PortfolioLayout() {
             </div>
             <div className="pt-6 pb-6">
               <p className="text-lg leading-relaxed text-slate-700 dark:text-slate-300 mb-4">
-                Hello! I&apos;m a passionate full-stack developer with over 4
-                years of experience building modern web applications. I
-                specialize in React, Next.js, and TypeScript, with a strong
-                background in both frontend and backend development.
+                Hi, I’m a full-stack developer who enjoys turning ideas into
+                fast, accessible web experiences. I work mostly with React,
+                Next.js, TypeScript, and Rails, and I like building things that
+                are intuitive to use.
               </p>
               <p className="text-lg leading-relaxed text-slate-700 dark:text-slate-300">
-                When I&apos;m not coding, you&apos;ll find me solving
-                algorithmic challenges on competitive programming platforms or
-                exploring new technologies. I&apos;m always eager to learn and
-                take on new challenges that push the boundaries of what&apos;s
-                possible on the web.
+                When I’m not working on the web, I like solving algorithmic
+                problems.
               </p>
             </div>
           </section>
@@ -315,9 +312,6 @@ export function PortfolioLayout() {
       {/* <aside className="hidden lg:block"> */}
       {/*   <TableOfContents activeSection={activeSection} /> */}
       {/* </aside> */}
-      <footer className="flex items-center justify-center h-12 w-full bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 shadow-sm">
-        <div>© 2025 Biniyam Negasa</div>
-      </footer>
     </div>
   );
 }

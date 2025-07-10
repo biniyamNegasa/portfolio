@@ -36,55 +36,53 @@ export const projects = [
     title: "OdinBook",
     description:
       "A Facebook-inspired social media app built with Ruby on Rails. Features user authentication, following, posting, and a personalized feed.",
-    tech: [
-      "Ruby on Rails",
-      "Devise",
-      "GitHub OAuth",
-      "HTML",
-      "JavaScript",
-      "Docker",
-    ],
+    tech: ["Ruby on Rails", "Hotwire", "JavaScript", "Tailwind CSS"],
     github: "https://github.com/biniyamNegasa/odin-odinbook",
     demo: "https://odinbook.koyeb.app/",
-    image: "",
+    image: "/odinbook.png",
   },
   {
     title: "Odin Where's Waldo",
     description:
       "A modern, responsive web app for playing 'Where's Waldo'. Users search for hidden characters in large images, get instant feedback, and compete on leaderboards. Features a React frontend and a Ruby backend.",
-    tech: ["React", "JavaScript", "CSS", "HTML", "Vite", "Ruby", "Docker"],
+    tech: ["React", "Tailwind CSS", "JavaScript", "Ruby on Rails", "vite"],
     github: "https://github.com/biniyamNegasa/odin-where-s-waldo-frontend",
     demo: "https://odinwhereswaldo.netlify.app/",
-    image: "",
+    image: "/odin-where-s-waldo.png",
   },
   {
-    title: "A2SV G5 Starter Project Phase",
-    description:
-      "A collection of starter projects developed during the A2SV project phase, showcasing various tech stacks and collaborative learning.",
-    tech: ["TypeScript", "CSS", "JavaScript"],
+    title: "Bank Dashboard",
+    description: "A responsive web app for managing bank accounts.",
+    tech: [
+      "Nextjs",
+      "TypeScript",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "JavaScript",
+    ],
     github:
       "https://github.com/RealEskalate/a2sv-g5-project-phase-starter-project/tree/astu.web.g2.main",
     demo: "",
-    image: "",
+    image: "/bank-dashboard.png",
   },
   {
     title: "Odin Memory Card",
     description:
       "A memory card game built with React and the AniList API, created as part of The Odin Project.",
-    tech: ["React", "JavaScript", "CSS", "HTML", "AniList API", "Vite"],
+    tech: ["React", "JavaScript", "CSS", "AniList API", "Vite"],
     github: "https://github.com/biniyamNegasa/odin-memory-card",
     demo: "https://odin-memorycard-game.netlify.app/",
-    image: "",
+    image: "/odin-memory-card.png",
   },
-  {
-    title: "Odin Shopping Cart",
-    description:
-      "A simple shopping cart web app built with React as part of The Odin Project.",
-    tech: ["React", "JavaScript", "CSS", "HTML", "Vite"],
-    github: "https://github.com/biniyamNegasa/odin-shopping-cart",
-    demo: "https://odin-shop-cart.netlify.app/",
-    image: "",
-  },
+  // {
+  //   title: "Odin Shopping Cart",
+  //   description:
+  //     "A simple shopping cart web app built with React as part of The Odin Project.",
+  //   tech: ["React", "JavaScript", "CSS", "HTML", "Vite"],
+  //   github: "https://github.com/biniyamNegasa/odin-shopping-cart",
+  //   demo: "https://odin-shop-cart.netlify.app/",
+  //   image: "",
+  // },
   {
     title: "Odin Battleship",
     description:
@@ -92,7 +90,7 @@ export const projects = [
     tech: ["JavaScript", "HTML", "CSS", "Webpack"],
     github: "https://github.com/biniyamNegasa/odin-battleship",
     demo: "https://biniyamnegasa.github.io/odin-battleship/",
-    image: "",
+    image: "/odin-battleship.png",
   },
   {
     title: "Odin Weather App",
@@ -101,116 +99,116 @@ export const projects = [
     tech: ["JavaScript", "HTML", "CSS", "Visual Crossing API"],
     github: "https://github.com/biniyamNegasa/odin-weather-app",
     demo: "https://biniyamnegasa.github.io/odin-weather-app/",
-    image: "",
+    image: "/odin-weather-app.png",
   },
   {
     title: "Odin CV Application",
     description:
       "A simple web app to create and display your CV, built as part of The Odin Project.",
-    tech: ["JavaScript", "CSS", "HTML", "Vite"],
+    tech: ["React", "JavaScript", "CSS", "Vite"],
     github: "https://github.com/biniyamNegasa/odin-cv-application",
     demo: "https://odincvgen.netlify.app/",
-    image: "",
+    image: "/odincvgen.png",
   },
   {
     title: "Odin Homepage",
     description:
-      "A responsive single-page website built with HTML and CSS, created as part of The Odin Project.",
+      "A single-page website built with HTML and CSS, created as part of The Odin Project.",
     tech: ["HTML", "CSS"],
     github: "https://github.com/biniyamNegasa/odin-homepage",
     demo: "https://biniyamnegasa.github.io/odin-homepage/",
-    image: "",
+    image: "/odin-homepage.png",
   },
-  {
-    title: "Odin Admin Dashboard",
-    description:
-      "A responsive admin dashboard layout built with HTML and CSS, inspired by a design challenge from The Odin Project.",
-    tech: ["HTML", "CSS"],
-    github: "https://github.com/biniyamNegasa/odin-admin-dashboard",
-    demo: "https://biniyamnegasa.github.io/odin-admin-dashboard/",
-    image: "",
-  },
-  {
-    title: "Odin Restaurant Page",
-    description:
-      "A restaurant landing page built with JavaScript, HTML, and CSS as part of The Odin Project.",
-    tech: ["JavaScript", "HTML", "CSS", "Webpack"],
-    github: "https://github.com/biniyamNegasa/odin-restaurant-page",
-    demo: "https://biniyamnegasa.github.io/odin-restaurant-page/",
-    image: "",
-  },
-  {
-    title: "Odin Todo List",
-    description:
-      "A simple todo list app with projects, completion tracking, and local storage, built as part of The Odin Project.",
-    tech: ["JavaScript", "HTML", "CSS", "Webpack"],
-    github: "https://github.com/biniyamNegasa/odin-todo-list",
-    demo: "https://biniyamnegasa.github.io/odin-todo-list/",
-    image: "",
-  },
-  {
-    title: "Odin Search Flickr",
-    description:
-      "A web app that searches Flickr photos using the Flickr API, built as part of The Odin Project.",
-    tech: ["Ruby", "HTML", "JavaScript", "CSS", "Docker"],
-    github: "https://github.com/biniyamNegasa/odin-search-flickr",
-    demo: "",
-    image: "",
-  },
-  {
-    title: "Odin Calculator",
-    description:
-      "A simple calculator web app built with JavaScript, HTML, and CSS as part of The Odin Project.",
-    tech: ["JavaScript", "HTML", "CSS"],
-    github: "https://github.com/biniyamNegasa/odin-calculator",
-    demo: "https://biniyamnegasa.github.io/odin-calculator/",
-    image: "",
-  },
-  {
-    title: "Etch-a-Sketch",
-    description:
-      "A browser-based Etch-a-Sketch drawing app built with JavaScript, HTML, and CSS.",
-    tech: ["JavaScript", "HTML", "CSS"],
-    github: "https://github.com/biniyamNegasa/etch-a-sketch",
-    demo: "https://biniyamnegasa.github.io/etch-a-sketch/",
-    image: "",
-  },
-  {
-    title: "Odin Landing Page",
-    description:
-      "A sample landing page recreated from a design image, built with HTML and CSS as part of The Odin Project.",
-    tech: ["HTML", "CSS"],
-    github: "https://github.com/biniyamNegasa/odin-landing-page",
-    demo: "https://biniyamnegasa.github.io/odin-landing-page/",
-    image: "",
-  },
-  {
-    title: "Odin Recipes",
-    description:
-      "A simple website for displaying recipes, built with HTML and CSS as part of The Odin Project.",
-    tech: ["HTML", "CSS"],
-    github: "https://github.com/biniyamNegasa/odin-recipes",
-    demo: "https://biniyamnegasa.github.io/odin-recipes/",
-    image: "",
-  },
-  {
-    title: "Odin Sign Up Form",
-    description:
-      "A responsive sign-up form replica built with HTML and CSS as part of The Odin Project.",
-    tech: ["HTML", "CSS"],
-    github: "https://github.com/biniyamNegasa/odin-sign-up-form",
-    demo: "https://biniyamnegasa.github.io/odin-sign-up-form/",
-    image: "",
-  },
-  {
-    title: "Odin Tic Tac Toe",
-    description:
-      "A simple Tic Tac Toe game built with JavaScript, HTML, and CSS as part of The Odin Project.",
-    tech: ["JavaScript", "HTML", "CSS"],
-    github: "https://github.com/biniyamNegasa/odin-tic-tac-toe-js",
-    demo: "https://biniyamnegasa.github.io/odin-tic-tac-toe-js/",
-    image: "",
-  },
+  // {
+  //   title: "Odin Admin Dashboard",
+  //   description:
+  //     "A responsive admin dashboard layout built with HTML and CSS, inspired by a design challenge from The Odin Project.",
+  //   tech: ["HTML", "CSS"],
+  //   github: "https://github.com/biniyamNegasa/odin-admin-dashboard",
+  //   demo: "https://biniyamnegasa.github.io/odin-admin-dashboard/",
+  //   image: "",
+  // },
+  // {
+  //   title: "Odin Restaurant Page",
+  //   description:
+  //     "A restaurant landing page built with JavaScript, HTML, and CSS as part of The Odin Project.",
+  //   tech: ["JavaScript", "HTML", "CSS", "Webpack"],
+  //   github: "https://github.com/biniyamNegasa/odin-restaurant-page",
+  //   demo: "https://biniyamnegasa.github.io/odin-restaurant-page/",
+  //   image: "",
+  // },
+  // {
+  //   title: "Odin Todo List",
+  //   description:
+  //     "A simple todo list app with projects, completion tracking, and local storage, built as part of The Odin Project.",
+  //   tech: ["JavaScript", "HTML", "CSS", "Webpack"],
+  //   github: "https://github.com/biniyamNegasa/odin-todo-list",
+  //   demo: "https://biniyamnegasa.github.io/odin-todo-list/",
+  //   image: "",
+  // },
+  // {
+  //   title: "Odin Search Flickr",
+  //   description:
+  //     "A web app that searches Flickr photos using the Flickr API, built as part of The Odin Project.",
+  //   tech: ["Ruby", "HTML", "JavaScript", "CSS", "Docker"],
+  //   github: "https://github.com/biniyamNegasa/odin-search-flickr",
+  //   demo: "",
+  //   image: "",
+  // },
+  // {
+  //   title: "Odin Calculator",
+  //   description:
+  //     "A simple calculator web app built with JavaScript, HTML, and CSS as part of The Odin Project.",
+  //   tech: ["JavaScript", "HTML", "CSS"],
+  //   github: "https://github.com/biniyamNegasa/odin-calculator",
+  //   demo: "https://biniyamnegasa.github.io/odin-calculator/",
+  //   image: "",
+  // },
+  // {
+  //   title: "Etch-a-Sketch",
+  //   description:
+  //     "A browser-based Etch-a-Sketch drawing app built with JavaScript, HTML, and CSS.",
+  //   tech: ["JavaScript", "HTML", "CSS"],
+  //   github: "https://github.com/biniyamNegasa/etch-a-sketch",
+  //   demo: "https://biniyamnegasa.github.io/etch-a-sketch/",
+  //   image: "",
+  // },
+  // {
+  //   title: "Odin Landing Page",
+  //   description:
+  //     "A sample landing page recreated from a design image, built with HTML and CSS as part of The Odin Project.",
+  //   tech: ["HTML", "CSS"],
+  //   github: "https://github.com/biniyamNegasa/odin-landing-page",
+  //   demo: "https://biniyamnegasa.github.io/odin-landing-page/",
+  //   image: "",
+  // },
+  // {
+  //   title: "Odin Recipes",
+  //   description:
+  //     "A simple website for displaying recipes, built with HTML and CSS as part of The Odin Project.",
+  //   tech: ["HTML", "CSS"],
+  //   github: "https://github.com/biniyamNegasa/odin-recipes",
+  //   demo: "https://biniyamnegasa.github.io/odin-recipes/",
+  //   image: "",
+  // },
+  // {
+  //   title: "Odin Sign Up Form",
+  //   description:
+  //     "A responsive sign-up form replica built with HTML and CSS as part of The Odin Project.",
+  //   tech: ["HTML", "CSS"],
+  //   github: "https://github.com/biniyamNegasa/odin-sign-up-form",
+  //   demo: "https://biniyamnegasa.github.io/odin-sign-up-form/",
+  //   image: "",
+  // },
+  // {
+  //   title: "Odin Tic Tac Toe",
+  //   description:
+  //     "A simple Tic Tac Toe game built with JavaScript, HTML, and CSS as part of The Odin Project.",
+  //   tech: ["JavaScript", "HTML", "CSS"],
+  //   github: "https://github.com/biniyamNegasa/odin-tic-tac-toe-js",
+  //   demo: "https://biniyamnegasa.github.io/odin-tic-tac-toe-js/",
+  //   image: "",
+  // },
   {
     title: "Odin Chess",
     description:
@@ -218,7 +216,7 @@ export const projects = [
     tech: ["Ruby"],
     github: "https://github.com/biniyamNegasa/odin-chess",
     demo: "",
-    image: "",
+    image: "/odin-chess.png",
   },
   {
     title: "Odin Connect Four",
@@ -227,78 +225,78 @@ export const projects = [
     tech: ["Ruby"],
     github: "https://github.com/biniyamNegasa/odin-connect_four",
     demo: "",
-    image: "",
+    image: "/odin-connect-four.png",
   },
-  {
-    title: "Odin Hangman",
-    description:
-      "A terminal-based implementation of the classic Hangman word game, built with Ruby.",
-    tech: ["Ruby"],
-    github: "https://github.com/biniyamNegasa/odin-hangman",
-    demo: "",
-    image: "",
-  },
-  {
-    title: "Odin Mastermind",
-    description:
-      "A terminal-based implementation of the classic Mastermind code-breaking game, built with Ruby.",
-    tech: ["Ruby"],
-    github: "https://github.com/biniyamNegasa/odin-mastermind",
-    demo: "",
-    image: "",
-  },
-  {
-    title: "Odin Tic Tac Toe (Ruby)",
-    description:
-      "A terminal-based Tic Tac Toe game for two players, built with Ruby.",
-    tech: ["Ruby"],
-    github: "https://github.com/biniyamNegasa/odin-tic-tac-toe",
-    demo: "",
-    image: "",
-  },
-  {
-    title: "Odin Binary Search Trees",
-    description:
-      "A Ruby implementation of a binary search tree with basic operations.",
-    tech: ["Ruby"],
-    github: "https://github.com/biniyamNegasa/odin-binary_search_trees",
-    demo: "",
-    image: "",
-  },
-  {
-    title: "Odin HashMap",
-    description: "A Ruby implementation of a HashMap data structure.",
-    tech: ["Ruby"],
-    github: "https://github.com/biniyamNegasa/odin-HashMap",
-    demo: "",
-    image: "",
-  },
-  {
-    title: "Odin Linked Lists",
-    description: "A Ruby implementation of linked list data structures.",
-    tech: ["Ruby"],
-    github: "https://github.com/biniyamNegasa/odin-linked_lists",
-    demo: "",
-    image: "",
-  },
-  {
-    title: "Odin Caesar Cipher",
-    description:
-      "A Ruby script that encrypts text using the Caesar cipher technique, shifting characters by a given amount.",
-    tech: ["Ruby"],
-    github: "https://github.com/biniyamNegasa/odin-caesar-cipher",
-    demo: "",
-    image: "",
-  },
-  {
-    title: "Odin Knight's Travails",
-    description:
-      "A Ruby script that finds the shortest path for a knight on a chessboard from one square to another.",
-    tech: ["Ruby"],
-    github: "https://github.com/biniyamNegasa/odin-knights_travails",
-    demo: "",
-    image: "",
-  },
+  // {
+  //   title: "Odin Hangman",
+  //   description:
+  //     "A terminal-based implementation of the classic Hangman word game, built with Ruby.",
+  //   tech: ["Ruby"],
+  //   github: "https://github.com/biniyamNegasa/odin-hangman",
+  //   demo: "",
+  //   image: "",
+  // },
+  // {
+  //   title: "Odin Mastermind",
+  //   description:
+  //     "A terminal-based implementation of the classic Mastermind code-breaking game, built with Ruby.",
+  //   tech: ["Ruby"],
+  //   github: "https://github.com/biniyamNegasa/odin-mastermind",
+  //   demo: "",
+  //   image: "",
+  // },
+  // {
+  //   title: "Odin Tic Tac Toe (Ruby)",
+  //   description:
+  //     "A terminal-based Tic Tac Toe game for two players, built with Ruby.",
+  //   tech: ["Ruby"],
+  //   github: "https://github.com/biniyamNegasa/odin-tic-tac-toe",
+  //   demo: "",
+  //   image: "",
+  // },
+  // {
+  //   title: "Odin Binary Search Trees",
+  //   description:
+  //     "A Ruby implementation of a binary search tree with basic operations.",
+  //   tech: ["Ruby"],
+  //   github: "https://github.com/biniyamNegasa/odin-binary_search_trees",
+  //   demo: "",
+  //   image: "",
+  // },
+  // {
+  //   title: "Odin HashMap",
+  //   description: "A Ruby implementation of a HashMap data structure.",
+  //   tech: ["Ruby"],
+  //   github: "https://github.com/biniyamNegasa/odin-HashMap",
+  //   demo: "",
+  //   image: "",
+  // },
+  // {
+  //   title: "Odin Linked Lists",
+  //   description: "A Ruby implementation of linked list data structures.",
+  //   tech: ["Ruby"],
+  //   github: "https://github.com/biniyamNegasa/odin-linked_lists",
+  //   demo: "",
+  //   image: "",
+  // },
+  // {
+  //   title: "Odin Caesar Cipher",
+  //   description:
+  //     "A Ruby script that encrypts text using the Caesar cipher technique, shifting characters by a given amount.",
+  //   tech: ["Ruby"],
+  //   github: "https://github.com/biniyamNegasa/odin-caesar-cipher",
+  //   demo: "",
+  //   image: "",
+  // },
+  // {
+  //   title: "Odin Knight's Travails",
+  //   description:
+  //     "A Ruby script that finds the shortest path for a knight on a chessboard from one square to another.",
+  //   tech: ["Ruby"],
+  //   github: "https://github.com/biniyamNegasa/odin-knights_travails",
+  //   demo: "",
+  //   image: "",
+  // },
 ];
 
 export const experiences = [

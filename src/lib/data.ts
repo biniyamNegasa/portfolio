@@ -61,7 +61,7 @@ export const projects = [
       "JavaScript",
     ],
     github:
-      "https://github.com/RealEskalate/a2sv-g5-project-phase-starter-project/tree/astu.web.g2.main",
+      "https://github.com/RealEskalate/a2sv-g5-project-phase-starter-project/tree/astu.web.g2.main/web/ASTU-web-group-2/banking-dashboard",
     demo: "",
     image: "/bank-dashboard.png",
   },
